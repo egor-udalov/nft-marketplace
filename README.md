@@ -1,13 +1,13 @@
 # NFT Marketplace
-    Собирайте, покупайте и продавайте произведения искусства
+Собирайте, покупайте и продавайте произведения искусства
 
-    (HTML CSS JS)
+(HTML CSS JS)
     
-    Предупреждение!
-    Сайт создан в учебных целях. 
-    Вся представленная информация не является настоящей!
+Предупреждение!
+Сайт создан в учебных целях. 
+Вся представленная информация не является настоящей!
 
-    **<a href="https://www.figma.com/file/pYLezccGqjYxg8djRax2y7/NFT-Marketplace?type=design&node-id=1647-17907&mode=design&t=3uAQ7MARrtNIf5I4-0">Макет</a>**
+**<a href="https://www.figma.com/file/pYLezccGqjYxg8djRax2y7/NFT-Marketplace?type=design&node-id=1647-17907&mode=design&t=3uAQ7MARrtNIf5I4-0">Макет</a>**
 ____
 
 ## Файловая структура
