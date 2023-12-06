@@ -1,0 +1,31 @@
+@font-face {
+    font-family: SpaceMono;
+    font-weight: 400;
+    src: local("SpaceMono Regular"),
+        local("SpaceMono-Regular"),
+        url("../fonts/SpaceMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: SpaceMono;
+    font-weight: 700;
+    src: local("SpaceMono Bold"),
+        local("SpaceMono-Bold"),
+        url("../fonts/SpaceMono-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: WorkSans;
+    font-weight: 400;
+    src: local("WorkSans Regular"),
+        local("WorkSans-Regular"),
+        url("../fonts/WorkSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: WorkSans;
+    font-weight: 600;
+    src: local("WorkSans SemiBold"),
+        local("WorkSans-SemiBold"),
+        url("../fonts/WorkSans-SemiBold.woff2") format("woff2");
+}

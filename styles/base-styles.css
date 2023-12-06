@@ -1,0 +1,29 @@
+body {
+    font-style: normal;
+    line-height: normal;
+    color: var(--color-light);
+    background-color: #2B2B2B;
+}
+
+.page-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.content-container {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
