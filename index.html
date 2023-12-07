@@ -86,16 +86,32 @@
                         <p>Get Started</p>
                     </button>
                     <div class="hero__additional-info">
-                        <h4>240k+</h4>
-                        <p>Total Sale</p>
-                        <h4>100k+</h4>
-                        <p>Auctions</p>
-                        <h4>240k+</h4>
-                        <p>Artists</p>
+                        <div class="hero__statistic">
+                            <h4>240k+</h4>
+                            <p>Total Sale</p>
+                        </div>
+                        <div class="hero__statistic">
+                            <h4>100k+</h4>
+                            <p>Auctions</p>
+                        </div>
+                        <div class="hero__statistic">
+                            <h4>240k+</h4>
+                            <p>Artists</p>
+                        </div>
                     </div>
 
                     <a href="#" class="highlighted-nft">
                         <picture>
+                            <source
+                                srcset="images/highlighted_nft_image_desktop.avif, images/highlighted_nft_image_desktop2x.avif 2x"
+                                type="image/avif" media="(min-width: 521px)">
+                            <source
+                                srcset="images/highlighted_nft_image_desktop.webp, images/highlighted_nft_image_desktop2x.webp 2x"
+                                type="image/webp" media="(min-width: 521px)">
+                            <source srcset="images/highlighted_nft_image_mobile.avif" type="image/avif"
+                                media="(max-width: 520px)">
+                            <source srcset="images/highlighted_nft_image_mobile.webp" type="image/webp"
+                                media="(max-width: 520px)">
                             <img src="images/highlighted_nft_image.jpg" alt="nft image" class="highlighted-nft__image">
                         </picture>
                         <p class="highlighted-nft__descr">Space Walking</p>
@@ -105,6 +121,7 @@
                             <p class="highlighted-nft__author-name">Animakid</p>
                         </div>
                     </a>
+
                 </section>
 
             </div>
