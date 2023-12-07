@@ -1,6 +1,8 @@
 /* 
 <button class="interactive-button">
-    <svg></svg>
+    <svg>
+        Для <path> добавить id id="evenodd"
+    </svg>
     <p>Sign Up</p>
 </button> 
 */
