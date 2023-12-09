@@ -14,13 +14,6 @@
 
 .new-trending-nfts__title {
     grid-area: new-trending-nfts__title;
-
-    font-family: "Work Sans";
-    font-size: 38px;
-    font-weight: 600;
-    line-height: 120%;
-    color: var(--color-light);
-    text-transform: capitalize;
 }
 
 .new-trending-nfts__descr {
@@ -91,11 +84,6 @@
     .new-trending-nfts {
         padding-top: 40px;
         padding-bottom: 80px;
-    }
-
-    .new-trending-nfts__title {
-        font-size: 28px;
-        line-height: 140%;
     }
 
     .new-trending-nfts__descr {

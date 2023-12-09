@@ -13,13 +13,6 @@
 
 .top-creators__title {
     grid-area: top-creators__title;
-
-    font-family: "Work Sans";
-    font-size: 38px;
-    font-weight: 600;
-    line-height: 120%;
-    color: var(--color-light);
-    text-transform: capitalize;
 }
 
 .top-creators__descr {
@@ -84,11 +77,6 @@
 @media (width <=834px) {
     .top-creators {
         padding: 40px 0;
-    }
-
-    .top-creators__title {
-        font-size: 28px;
-        line-height: 140%;
     }
 
     .top-creators__descr {

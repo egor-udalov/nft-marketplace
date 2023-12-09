@@ -1,0 +1,15 @@
+.section-h3-title {
+    font-family: "Work Sans";
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%;
+    color: var(--color-light);
+    text-transform: capitalize;
+}
+
+@media (width <=834px) {
+    .section-h3-title {
+        font-size: 28px;
+        line-height: 140%;
+    }
+}
