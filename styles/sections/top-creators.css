@@ -17,15 +17,6 @@
 
 .top-creators__descr {
     grid-area: top-creators__descr;
-
-    margin-top: 10px;
-
-    font-family: "Work Sans";
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 160%;
-    color: var(--color-light);
-    text-transform: capitalize;
 }
 
 .top-creators__btn {
@@ -77,11 +68,6 @@
 @media (width <=834px) {
     .top-creators {
         padding: 40px 0;
-    }
-
-    .top-creators__descr {
-        font-size: 16px;
-        line-height: 140%;
     }
 
     .top-creators__btn {
