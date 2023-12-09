@@ -1,0 +1,125 @@
+.about {
+    padding: 80px 0;
+}
+
+.about__title {}
+
+.about__descr {}
+
+.about__wrapper-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 330px);
+    gap: 30px;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 48px;
+}
+
+.about-card {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 100%;
+    justify-content: center;
+
+    box-sizing: border-box;
+    width: 330px;
+    height: 439px;
+    padding: 10px 30px 30px;
+
+    background-color: var(--color-neutral);
+    border-radius: 20px;
+}
+
+.about-card__image {
+    width: 250px;
+    height: 250px;
+}
+
+.about-card__title {
+    margin-top: 20px;
+
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 140%;
+    color: var(--color-light);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.about-card__descr {
+    margin-top: 10px;
+
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--color-light);
+    text-align: center;
+}
+
+@media (width <=834px) {
+    .about {
+        padding: 40px 0;
+    }
+
+    .about__wrapper-cards {
+        grid-template-columns: repeat(auto-fill, 210px);
+        margin-top: 40px;
+    }
+
+    .about-card {
+        width: 210px;
+        height: 320px;
+        padding: 10px 20px 30px;
+    }
+
+    .about-card__image {
+        width: 160px;
+        height: 160px;
+    }
+
+    .about-card__title {
+        font-size: 16px;
+    }
+
+    .about-card__descr {
+        font-size: 12px;
+    }
+}
+
+@media (width <=520px) {
+    .about__wrapper-cards {
+        grid-template-columns: repeat(auto-fill, 315px);
+        gap: 20px;
+    }
+
+    .about-card {
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+
+        width: 315px;
+        height: 157px;
+        padding: 20px;
+    }
+
+    .about-card__image {
+        grid-row: span 2;
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-card__title {
+        grid-column: 2;
+        margin-top: 0;
+        text-align: start;
+    }
+
+    .about-card__descr {
+        grid-column: 2;
+        text-align: start;
+    }
+}
+
+@media (width <=375px) {}
