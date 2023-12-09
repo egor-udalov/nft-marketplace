@@ -1,0 +1,130 @@
+/*
+<a href="#" class="nft-card">
+    <img src="images/nft_card_distant_galaxy.png" alt="nft image" class="nft-card__image">
+
+    <div class="nft-card__info">
+        <p class="nft-card__name">Distant Galaxy</p>
+        <div class="nft-card__author-info">
+            <img src="" class="nft-card__author-avatar">
+            <p class="nft-card__author-name">MoonDancer</p>
+        </div>
+        <p class="nft-card__headline-price">Price</p>
+        <p class="nft-card__headline-highest-bid">Highest Bid</p>
+        <p class="nft-card__price">1.63 ETH</p>
+        <p class="nft-card__highest-bid">0.33 wETH</p>
+    </div>
+</a>
+*/
+
+.nft-card {
+    overflow: hidden;
+    display: block;
+
+    width: 330px;
+    height: 469px;
+
+    background-color: var(--color-neutral);
+    border-radius: 20px;
+}
+
+.nft-card__image {
+    grid-column: span 2;
+    width: 100%;
+    height: 296px;
+}
+
+.nft-card__info {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 173px;
+    padding: 20px 30px 25px;
+}
+
+.nft-card__name {
+    grid-column: span 2;
+
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 140%;
+    color: var(--color-light);
+    text-transform: capitalize;
+}
+
+.nft-card__author-info {
+    display: flex;
+    grid-column: span 2;
+    gap: 0 12px;
+    align-items: center;
+
+    width: 100%;
+    margin-top: 5px;
+}
+
+.nft-card__author-avatar {
+    overflow: hidden;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+}
+
+.nft-card__author-name {
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--color-light);
+}
+
+.nft-card__headline-price,
+.nft-card__headline-highest-bid {
+    margin-top: 25px;
+
+    font-family: "Space Mono";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 110%;
+    color: var(--color-neutral-light);
+}
+
+.nft-card__price,
+.nft-card__highest-bid {
+    margin-top: 8px;
+
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--color-light);
+}
+
+.nft-card__headline-highest-bid,
+.nft-card__highest-bid {
+    text-align: right;
+}
+
+@media (width <=520px) {
+    .nft-card {
+        width: 315px;
+        height: 402px;
+    }
+
+    .nft-card__image {
+        height: 238px;
+    }
+
+    .nft-card__info {
+        height: 164px;
+        padding: 20px 20px 25px;
+    }
+
+    .nft-card__price,
+    .nft-card__highest-bid {
+        font-size: 12px;
+        line-height: 110%;
+    }
+}
