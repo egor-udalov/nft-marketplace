@@ -9,6 +9,7 @@
 
     --color-neutral: #3B3B3B;
     --color-neutral-light: #858584;
+    --color-neutral-lighter: #ccc;
 
     /* transition */
     --transition-hover: .3s;
