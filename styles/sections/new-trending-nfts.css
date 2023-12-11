@@ -71,7 +71,7 @@
     }
 }
 
-@media (width <=834px) {
+@media (max-width: 834px) {
     .new-trending-nfts {
         padding-top: 40px;
         padding-bottom: 80px;
@@ -82,7 +82,7 @@
     }
 }
 
-@media (width <=520px) {
+@media (max-width: 520px) {
     .new-trending-nfts {
         padding-bottom: 60px;
     }

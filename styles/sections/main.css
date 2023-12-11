@@ -2,7 +2,7 @@
     margin-top: 100px;
 }
 
-@media (width <=834px) {
+@media (max-width: 834px) {
     .main {
         margin-top: 62px;
     }

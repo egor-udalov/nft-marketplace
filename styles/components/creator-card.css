@@ -93,7 +93,7 @@
     color: var(--color-light);
 }
 
-@media (width <=834px) {
+@media (max-width: 834px) {
     .creator-card {
         grid-auto-rows: auto;
         grid-template-columns: auto auto;

@@ -7,7 +7,7 @@
     text-transform: capitalize;
 }
 
-@media (width <=834px) {
+@media (max-width: 834px) {
     .section-h3-title {
         font-size: 28px;
         line-height: 140%;

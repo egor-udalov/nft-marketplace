@@ -107,7 +107,7 @@
     text-align: right;
 }
 
-@media (width <=520px) {
+@media (max-width: 520px) {
     .nft-card {
         width: 315px;
         height: 402px;

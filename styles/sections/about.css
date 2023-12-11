@@ -59,7 +59,7 @@
     text-align: center;
 }
 
-@media (width <=834px) {
+@media (max-width: 834px) {
     .about {
         padding: 40px 0;
     }
@@ -89,7 +89,7 @@
     }
 }
 
-@media (width <=520px) {
+@media (max-width: 520px) {
     .about__wrapper-cards {
         grid-template-columns: repeat(auto-fill, 315px);
         gap: 20px;
@@ -121,5 +121,3 @@
         text-align: start;
     }
 }
-
-@media (width <=375px) {}

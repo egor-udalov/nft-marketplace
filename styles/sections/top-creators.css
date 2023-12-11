@@ -65,7 +65,7 @@
     }
 }
 
-@media (width <=834px) {
+@media (max-width: 834px) {
     .top-creators {
         padding: 40px 0;
     }
@@ -84,7 +84,7 @@
     }
 }
 
-@media (width <=520px) {
+@media (max-width: 520px) {
     .top-creators {
         grid-template-areas:
             "top-creators__title top-creators__title"
