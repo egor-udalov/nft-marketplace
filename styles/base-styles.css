@@ -1,7 +1,10 @@
 body {
+    min-width: 375px;
+
     font-style: normal;
     line-height: normal;
     color: var(--color-light);
+    
     background-color: #2B2B2B;
 }
 

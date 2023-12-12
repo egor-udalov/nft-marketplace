@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>NFT Marketplace</title>
 
@@ -567,6 +567,13 @@
 
         </div>
     </footer>
+
+    <script>
+        if (window.innerWidth < 375) {
+            var vp = document.getElementById('viewport');
+            vp.setAttribute('content', 'width=375');
+        }
+    </script>
 
     <script src="/scripts/burger-menu.js"></script>
 
