@@ -1,20 +1,16 @@
-# NFT Marketplace
-Собирайте, покупайте и продавайте произведения искусства
+<h1>NFT Marketplace</h1>
+<b><p>Торговая площадка NFT. Собирайте, покупайте и продавайте произведения искусства.</p></b>
+<p>Сайт создан с целю обучения и практики.</p>
+<p><b>HTML, CSS, JS, БЭМ, Адаптив</b></p>
 
-(HTML CSS JS)
-    
-Предупреждение!
-Сайт создан в учебных целях. 
-Вся представленная информация не является настоящей!
-
-**<a href="https://www.figma.com/file/pYLezccGqjYxg8djRax2y7/NFT-Marketplace?type=design&node-id=1647-17907&mode=design&t=3uAQ7MARrtNIf5I4-0">Макет</a>**
+<a href="https://www.figma.com/file/pYLezccGqjYxg8djRax2y7/NFT-Marketplace?type=design&node-id=1647-17907&mode=design&t=3uAQ7MARrtNIf5I4-0">Ссылка на макет</a>
 ____
 
-## Файловая структура
-
-**Базовая структура проекта**
+<h3>Файловая структура</h3>
 
 ```
+Базовая структура проекта:
+
 └── fonts/ --------------------- # Шрифты
     ├── RobotoRegular.woff2         
 └── images/ -------------------- # Картинки
@@ -28,7 +24,7 @@ ____
     └── sections/ -------------- # Стили для секций
         ├── footer.css            
         ├── header.css            
-    ├── base-styles.css ------- # Базовые стили для всей страницы
+    ├── base-styles.css -------- # Базовые стили для всей страницы
     ├── fonts.css -------------- # Подключение шрифтов
     ├── reset.css -------------- # Сброс стилей
     ├── vars.css --------------- # CSS-переменные
