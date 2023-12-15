@@ -1,0 +1,50 @@
+.gallery-descr {
+    margin: 10px 0 30px;
+}    
+
+.container-collection-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.collection-card {
+    width: 330px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 15px;
+        
+}
+
+.collection-card__image-big {
+    grid-column: span 3;
+    height: 330px;
+}
+
+.number-additional {
+    display: block;
+    border-radius: 20px;
+    background-color: #A259FF;
+    font-size: 22px;
+    font-family: "Space Mono";
+    text-align: center;
+    padding: 32px 15px 32px 15px;
+
+}
+
+.artists-card {
+    display: flex;
+    align-items: end;
+    width: 330px;
+    gap: 12px;
+}
+
+.artists-card-avatar {
+    width: 24px;
+    height: 24px;
+}
+
+.artists-card-name {
+    font-size: 16px;
+    line-height: 22px;
+}
