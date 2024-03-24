@@ -1,0 +1,81 @@
+.newTrendingNfts {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-areas:
+        "newTrendingNfts__title newTrendingNfts__btn"
+        "newTrendingNfts__descr newTrendingNfts__btn"
+        "newTrendingNfts__nft-cards newTrendingNfts__nft-cards";
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+
+    &__title {
+        grid-area: newTrendingNfts__title;
+    }
+
+    &__descr {
+        grid-area: newTrendingNfts__descr;
+    }
+
+    &__btn {
+        grid-area: newTrendingNfts__btn;
+        align-self: end;
+        justify-self: end;
+
+        padding: 0 50px;
+    }
+
+    &__nftCards {
+        display: grid;
+        grid-area: newTrendingNfts__nft-cards;
+        grid-template-columns: repeat(auto-fill, 330px);
+        gap: 30px;
+        justify-content: center;
+
+        margin-top: 60px;
+    }
+}
+
+@media (width <=1089px) {
+    .newTrendingNfts__nft-cards>*:nth-child(n+3) {
+        display: none;
+    }
+}
+
+@media (max-width: 834px) {
+    .newTrendingNfts {
+        padding-top: 40px;
+        padding-bottom: 80px;
+
+        &__nftCards {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .newTrendingNfts {
+        padding-bottom: 60px;
+        grid-template-areas:
+            "newTrendingNfts__title newTrendingNfts__title"
+            "newTrendingNfts__descr newTrendingNfts__descr"
+            "newTrendingNfts__nft-cards newTrendingNfts__nft-cards"
+            "newTrendingNfts__btn newTrendingNfts__btn";
+
+
+        &__btn {
+            align-self: center;
+            justify-self: center;
+            width: 330px;
+            margin-top: 40px;
+        }
+
+        &__nftCards {
+            grid-template-columns: repeat(auto-fill, 315px);
+            gap: 20px;
+        }
+    }
+}

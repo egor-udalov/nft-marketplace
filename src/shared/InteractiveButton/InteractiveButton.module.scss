@@ -1,0 +1,104 @@
+.interactiveButton {
+  cursor: pointer;
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+
+  height: 60px;
+
+  font: inherit;
+  color: inherit;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+
+  svg {
+    fill: var(--color-primary);
+    width: 20px;
+    height: 20px;
+  }
+
+  p {
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    color: var(--color-light);
+    text-align: center;
+  }
+}
+
+.primary {
+  background-color: var(--color-primary);
+
+  svg {
+    fill: var(--color-light);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-light);
+      transition: var(--transition-hover);
+    }
+
+    &:hover p {
+      color: var(--color-primary);
+      transition: var(--transition-hover);
+    }
+
+    &:hover svg {
+      fill: var(--color-primary);
+      transition: var(--transition-hover);
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      background-color: var(--color-light);
+    }
+
+    &:active p {
+      color: var(--color-primary);
+    }
+
+    &:active svg {
+      fill: var(--color-primary);
+    }
+  }
+}
+
+.dark {
+  border: 2px solid;
+  border-color: var(--color-primary);
+
+  svg {
+    fill: var(--color-primary);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-light);
+      border-color: var(--color-light);
+      transition: var(--transition-hover);
+    }
+
+    &:hover p {
+      color: var(--color-primary);
+      transition: var(--transition-hover);
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      background-color: var(--color-light);
+      border-color: var(--color-light);
+    }
+
+    &:active p {
+      color: var(--color-primary);
+    }
+  }
+}

@@ -1,0 +1,196 @@
+.hero {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    justify-items: start;
+
+    padding: 80px 0;
+
+
+    &__title {
+        padding-right: 10px;
+
+        font-family: "Work Sans";
+        font-size: 67px;
+        font-weight: 600;
+        line-height: 110%;
+        color: var(--color-light);
+        text-transform: capitalize;
+    }
+
+    &__descr {
+        margin-top: 20px;
+
+        font-family: "Work Sans";
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 160%;
+        color: var(--color-light);
+        text-transform: capitalize;
+    }
+
+    &__btn {
+        margin-top: 30px;
+        padding: 0 50px;
+    }
+
+    &__additionalInfo {
+        display: flex;
+        gap: 30px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    &__statistic h4 {
+        width: 150px;
+
+        font-family: "Space Mono";
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 140%;
+        color: var(--color-light);
+        text-transform: capitalize;
+    }
+
+    &__statistic p {
+        width: 150px;
+
+        font-family: "Work Sans";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 160%;
+        color: var(--color-light);
+        text-transform: capitalize;
+    }
+
+    .highlightedNft {
+        overflow: hidden;
+        display: block;
+        grid-column: 2;
+        grid-row: 1 / span 4;
+
+        width: 100%;
+        height: 510px;
+
+        background-color: var(--color-neutral);
+        border-radius: 20px;
+
+
+        &__image {
+            width: 100%;
+            height: 410px;
+        }
+
+        &__descr {
+            padding-top: 20px;
+            padding-left: 20px;
+
+            font-family: "Work Sans";
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 140%;
+            color: var(--color-light);
+            text-transform: capitalize;
+        }
+
+        &__author {
+            display: flex;
+            gap: 0 12px;
+            align-items: center;
+
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        &__authorAvatar {
+            overflow: hidden;
+            width: 24px;
+            height: 24px;
+            border-radius: 100%;
+        }
+
+        &__authorName {
+            font-family: "Work Sans";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+            color: var(--color-light);
+        }
+    }
+
+    @media (max-width: 834px) {
+        .hero {
+            &__title {
+                font-size: 38px;
+                line-height: 120%;
+            }
+
+            &__descr {
+                font-size: 16px;
+                line-height: 140%;
+            }
+
+            &__btn {
+                margin-top: 20px;
+            }
+
+            &__additionalInfo {
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+
+            &__statistic h4 {
+                width: 90px;
+                font-size: 22px;
+                line-height: 160%;
+            }
+
+            &__statistic p {
+                width: 90px;
+                font-size: 16px;
+                line-height: 140%;
+            }
+
+            .highlightedNft {
+                height: 330px;
+
+                &__image {
+                    height: 221px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .hero {
+        grid-template-columns: 1fr;
+        justify-items: stretch;
+        padding: 40px 0;
+
+        &__btn {
+            margin-top: 40px;
+        }
+
+        &__additionalInfo {
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .highlightedNft {
+            grid-column: 1;
+            grid-row: 3;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .hero {
+        &__title {
+            font-size: 28px;
+            line-height: 140%;
+        }
+    }
+}

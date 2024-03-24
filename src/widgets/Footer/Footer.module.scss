@@ -1,0 +1,215 @@
+.footer {
+    padding: 40px 0;
+    background-color: var(--color-neutral);
+}
+
+.footer__info,
+.footer__pageLink,
+.footer .joinDigest__text,
+.footer .joinOurCommunity__text {
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    color: var(--color-neutral-lighter);
+}
+
+.footer__subtitle {
+    font-family: "Space Mono";
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 160%;
+    color: var(--color-light);
+    text-transform: capitalize;
+}
+
+.footer__subtitle1 {
+    grid-area: footer__subtitle1;
+}
+
+.footer__subtitle2 {
+    grid-area: footer__subtitle2;
+}
+
+.footer__body {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-areas:
+        "footerLogo footer__subtitle1 footer__subtitle2"
+        "footer__info footer__wrapperPageLinks joinDigest"
+        "joinOurCommunity footer__wrapperPageLinks joinDigest";
+    grid-template-columns: repeat(3, auto);
+    column-gap: 20px;
+    place-items: start;
+    justify-content: space-between;
+    justify-items: start;
+}
+
+.footerLogo {
+    display: flex;
+    grid-area: footerLogo;
+    gap: 0 12px;
+    align-items: center;
+}
+
+.footerLogo__icon {
+    width: 32px;
+    height: 32px;
+}
+
+.footerLogo__name {
+    height: 20px;
+    margin-top: 3px;
+}
+
+.footer__info {
+    grid-area: footer__info;
+    max-width: 238px;
+    margin-top: 30px;
+}
+
+.footer .joinOurCommunity {
+    grid-area: joinOurCommunity;
+    margin-top: 20px;
+}
+
+.footer .joinOurCommunity__wrapperLinks {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 15px;
+}
+
+.footer__wrapperPageLinks {
+    display: grid;
+    grid-area: footer__wrapperPageLinks;
+    grid-auto-rows: auto;
+    grid-template-columns: auto;
+    row-gap: 20px;
+    justify-items: start;
+
+    margin-top: 25px;
+}
+
+.footer__pageLink {}
+
+.footer__pageLink::after {
+    content: '';
+
+    display: block;
+
+    width: 0;
+    height: 1px;
+    margin-top: 1px;
+
+    background: var(--color-primary);
+}
+
+.footer .joinDigest {
+    grid-area: joinDigest;
+    margin-top: 25px;
+}
+
+.footer .joinDigest__text {
+    max-width: 330px;
+}
+
+.footer__divider {
+    display: block;
+
+    width: 100%;
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    background-color: var(--color-neutral-light);
+}
+
+.footer__copyrightMark {
+    font-family: "Work Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 110%;
+    color: var(--color-neutral-lighter);
+}
+
+.joinOurCommunity__link {
+    fill: var(--color-neutral-light);
+}
+
+@media (hover: hover) {
+    .footer .joinOurCommunity__link:hover {
+        fill: var(--color-primary);
+    }
+
+    .footer .joinOurCommunity__link:hover {
+        stroke: var(--color-primary);
+    }
+
+    .footer__pageLink:hover {
+        color: var(--color-primary);
+    }
+
+    .footer__pageLink:hover::after {
+        width: 100%;
+        transition: width var(--transition-hover);
+    }
+}
+
+@media (hover: none) {
+    .footer .joinOurCommunity__link:active {
+        fill: var(--color-primary);
+    }
+
+    .footer .joinOurCommunity__link:active {
+        stroke: var(--color-primary);
+    }
+
+    .footer__pageLink:active {
+        color: var(--color-primary);
+    }
+
+    .footer__pageLink:active::after {
+        width: 100%;
+    }
+}
+
+@media (max-width: 834px) {
+    .footer__subtitle {
+        margin-top: 30px;
+    }
+
+    .footer__body {
+        grid-template-areas:
+            "footerLogo"
+            "footer__info"
+            "joinOurCommunity"
+            "footer__subtitle1"
+            "footer__wrapperPageLinks"
+            "footer__subtitle2"
+            "joinDigest";
+        grid-template-columns: 100%;
+    }
+
+    .footer__info {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer__wrapperPageLinks {
+        margin-top: 20px;
+    }
+
+    .footer .joinDigest {
+        margin-top: 20px;
+    }
+
+    .footer .joinDigest__text {
+        max-width: 100%;
+    }
+
+    .footer__divider {
+        margin-top: 50px;
+    }
+}

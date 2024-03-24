@@ -1,0 +1,114 @@
+.nftCard {
+    overflow: hidden;
+    display: block;
+
+    width: 330px;
+    height: 469px;
+
+    background-color: var(--color-neutral);
+    border-radius: 20px;
+
+
+    &__image {
+        grid-column: span 2;
+        width: 100%;
+        height: 296px;
+    }
+
+    &__info {
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: 1fr 1fr;
+
+        box-sizing: border-box;
+        width: 100%;
+        height: 173px;
+        padding: 20px 30px 25px;
+    }
+
+    &__name {
+        grid-column: span 2;
+
+        font-family: "Work Sans";
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 140%;
+        color: var(--color-light);
+        text-transform: capitalize;
+    }
+
+    &__authorInfo {
+        display: flex;
+        grid-column: span 2;
+        gap: 0 12px;
+        align-items: center;
+
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    &__authorAvatar {
+        overflow: hidden;
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+    }
+
+    &__authorName {
+        font-family: "Space Mono";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        color: var(--color-light);
+    }
+
+    &__headlinePrice,
+    &__headlineHighestBid {
+        margin-top: 25px;
+
+        font-family: "Space Mono";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 110%;
+        color: var(--color-neutral-light);
+    }
+
+    &__price,
+    &__highestBid {
+        margin-top: 8px;
+
+        font-family: "Space Mono";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        color: var(--color-light);
+    }
+
+    &__headlineHighestBid,
+    &__highestBid {
+        text-align: right;
+    }
+}
+
+@media (max-width: 520px) {
+    .nftСard {
+        width: 315px;
+        height: 402px;
+
+
+        &__image {
+            height: 238px;
+        }
+
+        &__info {
+            height: 164px;
+            padding: 20px 20px 25px;
+        }
+
+        &__price,
+        &__highestBid {
+            font-size: 12px;
+            line-height: 110%;
+        }
+    }
+}

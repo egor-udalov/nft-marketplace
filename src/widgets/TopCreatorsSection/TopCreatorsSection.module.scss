@@ -1,0 +1,88 @@
+.topCreators {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-areas:
+        "topCreators__title topCreators__btn"
+        "topCreators__descr topCreators__btn"
+        "topArtistCards topArtistCards";
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+
+    padding: 80px 0;
+
+
+    &__title {
+        grid-area: topCreators__title;
+    }
+
+    &__descr {
+        grid-area: topCreators__descr;
+    }
+
+    &__btn {
+        grid-area: topCreators__btn;
+        align-self: end;
+        justify-self: end;
+
+        padding: 0 50px;
+
+        border: 2px solid;
+        border-color: var(--color-primary);
+    }
+
+    .topArtistCards {
+        display: grid;
+        grid-area: topArtistCards;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(auto-fill, 240px);
+        gap: 30px;
+        justify-content: center;
+
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 834px) {
+    .topCreators {
+        padding: 40px 0;
+
+        &__btn {
+            padding: 0 30px;
+        }
+
+        .topArtistCards {
+            grid-template-columns: repeat(auto-fill, 330px);
+            margin-top: 40px;
+        }
+
+        .topArtistCards>*:nth-child(n+7):nth-child(-n+12) {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .topCreators {
+        grid-template-areas:
+            "topCreators__title topCreators__title"
+            "topCreators__descr topCreators__descr"
+            "topArtistCards topArtistCards"
+            "topCreators__btn topCreators__btn";
+
+
+        &__btn {
+            align-self: center;
+            justify-self: center;
+            width: 330px;
+            margin-top: 40px;
+        }
+
+        .topArtistCards {
+            gap: 20px;
+        }
+
+        .topArtistCards>*:nth-child(n+6):nth-child(-n+12) {
+            display: none;
+        }
+    }
+}
