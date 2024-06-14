@@ -1,24 +1,32 @@
-import "./styles/reset.css";
-import "./styles/vars.css";
-import "./styles/fonts.css";
-import "./styles/base-styles.css";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Header from "../widgets/Header/Header";
-import MainPage from "../pages/MainPage";
-import Footer from "../widgets/Footer/Footer";
+import './styles/reset.css';
+import './styles/vars.css';
+import './styles/fonts.css';
+import './styles/base-styles.css';
+
+import Header from '../widgets/Header/Header';
+import MainPage from '../pages/MainPage';
+import CreateAccountPage from '../pages/CreateAccountPage/CreateAccountPage';
+import Footer from '../widgets/Footer/Footer';
 
 function App() {
-  return (
-    <>
-      <div class="page-container">
-        <Header />
-        <main class="main">
-          <MainPage />
-        </main>
-      </div>
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<div class='page-container'>
+				<Header />
+				<main class='main'>
+					<BrowserRouter>
+						<Routes>
+							<Route path='/' element={<MainPage />} />
+							<Route path='/create-account' element={<CreateAccountPage />} />
+						</Routes>
+					</BrowserRouter>
+				</main>
+			</div>
+			<Footer />
+		</>
+	);
 }
 
 export default App;

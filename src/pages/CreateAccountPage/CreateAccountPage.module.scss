@@ -1,0 +1,152 @@
+.createAccount {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 60px;
+
+	&__image {
+		img {
+			max-width: 610px;
+			height: 691px;
+			object-fit: contain;
+		}
+	}
+
+	&__title {
+		font-family: 'Work Sans';
+		font-weight: 600;
+		font-size: 51px;
+		line-height: 110%;
+		margin-top: 100px;
+	}
+
+	&__description {
+		margin-top: 20px;
+		font-family: 'Work Sans';
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 160%;
+		margin-top: 20px;
+	}
+
+	&__form {
+	}
+
+	&__inputWrapper {
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+
+	&__input {
+		width: 100%;
+		height: 46px;
+		padding: 11px 20px 11px 52px;
+		box-sizing: border-box;
+		border-radius: 20px;
+		font-family: 'Work Sans';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 140%;
+		color: var(--color-dark);
+		border: none;
+
+		&::placeholder {
+			font-family: 'Work Sans';
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 140%;
+			color: var(--color-dark);
+		}
+	}
+
+	&__button {
+		padding: 0;
+		border: none;
+		font: inherit;
+		margin-top: 30px;
+		font-family: 'Work Sans';
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 140%;
+		color: var(--color-light);
+		background-color: var(--color-primary);
+		width: 100%;
+		height: 46px;
+		border-radius: 20px;
+		cursor: pointer;
+		margin-bottom: 40px;
+
+		@media (hover: hover) {
+			&:hover {
+				background-color: var(--color-light);
+				color: var(--color-primary);
+				transition: var(--transition-fast);
+			}
+		}
+
+		@media (hover: none) {
+			&:active {
+				background-color: var(--color-light);
+				color: var(--color-primary);
+			}
+		}
+	}
+}
+
+@media (max-width: 1100px) {
+	.createAccount {
+		column-gap: 40px;
+
+		&__image {
+			width: 45%;
+
+			img {
+				width: 100%;
+				height: 615px;
+				object-fit: cover;
+			}
+		}
+
+		&__title {
+			font-size: 38px;
+			line-height: 120%;
+			margin-top: 80px;
+		}
+
+		&__description {
+			font-size: 16px;
+			line-height: 140%;
+		}
+	}
+}
+
+@media (max-width: 834px) {
+	.createAccount {
+		flex-direction: column;
+		align-items: center;
+		column-gap: 0;
+
+		&__image {
+			width: 375px;
+
+			img {
+				margin: 0 auto;
+				width: 375px;
+				height: 232px;
+				object-fit: contain;
+			}
+		}
+
+		&__title {
+			margin-top: 30px;
+		}
+
+		&__inputWrapper {
+			margin-top: 30px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+}
