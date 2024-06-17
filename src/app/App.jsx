@@ -9,6 +9,7 @@ import Header from '../widgets/Header/Header';
 import MainPage from '../pages/MainPage';
 import CreateAccountPage from '../pages/CreateAccountPage/CreateAccountPage';
 import Footer from '../widgets/Footer/Footer';
+import ConnectWalletPage from '../pages/ConnectWalletPage/ConnectWalletPage';
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 						<Routes>
 							<Route path='/' element={<MainPage />} />
 							<Route path='/create-account' element={<CreateAccountPage />} />
+							<Route path='/connect-wallet' element={<ConnectWalletPage />} />
 						</Routes>
 					</BrowserRouter>
 				</main>
