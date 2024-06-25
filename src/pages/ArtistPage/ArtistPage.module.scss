@@ -1,0 +1,271 @@
+.artistPage {
+	&_bg {
+		width: 100%;
+		height: 320px;
+	}
+
+	.artistInfo {
+		&__avatarImage {
+			position: relative;
+			top: -70px;
+			border: 2px solid black;
+			border-radius: 20px;
+		}
+
+		&__nameWrapper {
+			display: flex;
+			justify-content: space-between;
+			gap: 30px;
+		}
+
+		&__name {
+			font-family: 'Work Sans';
+			font-weight: 600;
+			font-size: 51px;
+			line-height: 110%;
+			color: var(--color-light);
+		}
+
+		&__buttonsWrapper {
+			display: flex;
+			gap: 20px;
+
+			button {
+				padding: 0;
+				cursor: pointer;
+				height: 60px;
+				border-radius: 20px;
+				display: flex;
+				gap: 12px;
+				align-items: center;
+				padding: 0 20px;
+				font-family: 'Work Sans';
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 140%;
+
+				img {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+
+		&__buttonCopy {
+			border: none;
+			background-color: var(--color-primary);
+			color: var(--color-light);
+		}
+
+		&__buttonFollow {
+			color: var(--color-light);
+			border: 2px solid var(--color-primary);
+			background-color: transparent;
+		}
+
+		&__statisticsWrapper {
+			display: flex;
+			gap: 20px;
+			margin-top: 30px;
+
+			.statistic {
+				width: 160px;
+
+				&__number {
+					font-family: 'Space Mono';
+					font-weight: 700;
+					font-size: 28px;
+					line-height: 140%;
+					color: var(--color-light);
+				}
+
+				&__description {
+					font-family: 'Work Sans';
+					font-weight: 400;
+					font-size: 22px;
+					line-height: 160%;
+					color: var(--color-light);
+				}
+			}
+		}
+
+		&__descriptionTitle {
+			font-family: 'Space Mono';
+			font-weight: 700;
+			font-size: 22px;
+			line-height: 160%;
+			margin-top: 30px;
+			color: var(--color-neutral-light);
+		}
+
+		&__description {
+			font-family: 'Work Sans';
+			font-weight: 400;
+			font-size: 22px;
+			line-height: 160%;
+			color: var(--color-light);
+			margin-top: 10px;
+		}
+
+		&__wrapperLinks {
+			display: flex;
+			column-gap: 10px;
+			margin-top: 10px;
+		}
+
+		&__link {
+			fill: var(--color-neutral-light);
+		}
+
+		@media (hover: hover) {
+			&__link:hover {
+				fill: var(--color-primary);
+			}
+
+			&__link:hover {
+				stroke: var(--color-primary);
+			}
+		}
+
+		@media (hover: none) {
+			&__link:active {
+				fill: var(--color-primary);
+			}
+
+			&__link:active {
+				stroke: var(--color-primary);
+			}
+		}
+	}
+
+	&__nftCategories {
+		width: 100%;
+		height: 70px;
+		border-top: 0.5px solid #3b3b3b;
+		margin-top: 40px;
+		display: flex;
+		align-items: end;
+		justify-content: stretch;
+	}
+
+	&__category {
+		flex-grow: 1;
+		height: 60px;
+		padding: 0 30px;
+		border: none;
+		font: inherit;
+		background-color: transparent;
+
+		font-family: 'Work Sans';
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 140%;
+		color: var(--color-neutral-light);
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
+		border-bottom: 2px solid transparent;
+		cursor: pointer;
+
+		&:active {
+			border-bottom: 2px solid var(--color-neutral-light);
+			color: var(--color-light);
+		}
+
+		&__number {
+			font-family: 'Space Mono';
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 140%;
+			color: var(--color-light);
+
+			padding: 5px 10px;
+			border-radius: 20px;
+			background-color: var(--color-neutral);
+		}
+
+		&:active &__number {
+			background-color: var(--color-neutral-light);
+		}
+	}
+
+	&__nftCards {
+		display: flex;
+		gap: 30px;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 80px 0;
+	}
+}
+
+@media (max-width: 1100px) {
+}
+
+@media (max-width: 834px) {
+	.artistPage {
+		.artistInfo {
+			&__nameWrapper {
+				flex-direction: column;
+			}
+
+			&__statisticsWrapper {
+				.statistic {
+					&__number {
+						font-size: 22px;
+					}
+
+					&__description {
+						font-size: 16px;
+					}
+				}
+			}
+
+			&__descriptionTitle {
+				font-size: 16px;
+			}
+
+			&__description {
+				font-size: 16px;
+			}
+		}
+
+		&__category {
+			font-size: 16px;
+			padding: 0 10px;
+			gap: 5px;
+
+			&__number {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.artistPage {
+		.artistInfo {
+			&__buttonsWrapper {
+				flex-direction: column;
+				width: 100%;
+				justify-content: stretch;
+
+				button {
+					flex-grow: 1;
+					justify-content: center;
+				}
+			}
+		}
+
+		&__category {
+			&__number {
+				display: none;
+			}
+		}
+
+		&__nftCards {
+			margin: 60px 0;
+		}
+	}
+}
