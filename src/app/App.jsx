@@ -11,6 +11,7 @@ import CreateAccountPage from '../pages/CreateAccountPage/CreateAccountPage';
 import Footer from '../widgets/Footer/Footer';
 import ConnectWalletPage from '../pages/ConnectWalletPage/ConnectWalletPage';
 import ArtistPage from '../pages/ArtistPage/ArtistPage';
+import NftPage from '../pages/NftPage/NftPage';
 
 function App() {
 	return (
@@ -24,6 +25,7 @@ function App() {
 							<Route path='/create-account' element={<CreateAccountPage />} />
 							<Route path='/connect-wallet' element={<ConnectWalletPage />} />
 							<Route path='/artist' element={<ArtistPage />} />
+							<Route path='/nft' element={<NftPage />} />
 						</Routes>
 					</BrowserRouter>
 				</main>
