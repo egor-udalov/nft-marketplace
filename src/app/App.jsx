@@ -12,6 +12,7 @@ import Footer from '../widgets/Footer/Footer';
 import ConnectWalletPage from '../pages/ConnectWalletPage/ConnectWalletPage';
 import ArtistPage from '../pages/ArtistPage/ArtistPage';
 import NftPage from '../pages/NftPage/NftPage';
+import MarketplacePage from '../pages/MarketplacePage/MarketplacePage';
 
 function App() {
 	return (
@@ -26,6 +27,7 @@ function App() {
 							<Route path='/connect-wallet' element={<ConnectWalletPage />} />
 							<Route path='/artist' element={<ArtistPage />} />
 							<Route path='/nft' element={<NftPage />} />
+							<Route path='/marketplace' element={<MarketplacePage />} />
 						</Routes>
 					</BrowserRouter>
 				</main>

@@ -1,0 +1,63 @@
+.marketplace {
+	&__title {
+		font-family: 'Work Sans';
+		font-weight: 600;
+		font-size: 51px;
+		line-height: 110%;
+		color: var(--color-light);
+
+		padding-top: 80px;
+	}
+
+	&__description {
+		font-family: 'Work Sans';
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 160%;
+		color: var(--color-light);
+
+		margin-top: 10px;
+	}
+
+	.nftCards {
+		margin: 80px 0;
+
+		&__flexWrapper {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+			justify-content: center;
+		}
+	}
+}
+
+@media (max-width: 834px) {
+	.marketplace {
+		&__title {
+			font-size: 38px;
+			padding-top: 60px;
+		}
+
+		&__description {
+			font-size: 16px;
+			line-height: 140%;
+		}
+
+		.nftCards {
+			margin: 60px 0;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.marketplace {
+		&__title {
+			font-size: 28px;
+			padding-top: 40px;
+		}
+
+		.nftCards {
+			margin: 40px 0;
+		}
+	}
+}
