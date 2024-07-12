@@ -13,6 +13,7 @@ import ConnectWalletPage from '../pages/ConnectWalletPage/ConnectWalletPage';
 import ArtistPage from '../pages/ArtistPage/ArtistPage';
 import NftPage from '../pages/NftPage/NftPage';
 import MarketplacePage from '../pages/MarketplacePage/MarketplacePage';
+import RankingsPage from '../pages/RankingsPage/RankingsPage';
 
 function App() {
 	return (
@@ -28,6 +29,7 @@ function App() {
 							<Route path='/artist' element={<ArtistPage />} />
 							<Route path='/nft' element={<NftPage />} />
 							<Route path='/marketplace' element={<MarketplacePage />} />
+							<Route path='/rankings' element={<RankingsPage />} />
 						</Routes>
 					</BrowserRouter>
 				</main>

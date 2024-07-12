@@ -1,0 +1,175 @@
+.rankings {
+	padding-bottom: 40px;
+
+	&__title {
+		font-family: 'Work Sans';
+		font-weight: 600;
+		font-size: 51px;
+		line-height: 110%;
+		color: var(--color-light);
+
+		padding-top: 80px;
+	}
+
+	&__description {
+		font-family: 'Work Sans';
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 160%;
+		color: var(--color-light);
+
+		margin-top: 20px;
+	}
+
+	.tableHeader.tableItem {
+		margin-top: 40px;
+		background-color: inherit;
+		border: 1px solid var(--color-neutral);
+
+		div {
+			font-family: 'Space Mono';
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 140%;
+			color: var(--color-neutral-light);
+			padding: 0 5px;
+		}
+	}
+
+	.tableItem {
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+		padding: 12px 20px;
+		border-radius: 20px;
+		background-color: var(--color-neutral);
+
+		&__artist {
+			display: flex;
+			align-items: center;
+			justify-content: start;
+			width: 50%;
+			gap: 20px;
+
+			&__number {
+				width: 30px;
+				height: 30px;
+				border-radius: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: var(--color-dark);
+
+				font-family: 'Space Mono';
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 140%;
+				color: var(--color-neutral-light);
+			}
+
+			&__avatar {
+				width: 60px;
+				height: 60px;
+				border-radius: 100%;
+			}
+
+			&__name {
+				font-family: 'Work Sans';
+				font-weight: 600;
+				font-size: 22px;
+				line-height: 140%;
+				color: var(--color-light);
+			}
+		}
+
+		&__statistic {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			width: 50%;
+
+			&__change,
+			&__NFTsSold,
+			&__volume {
+				font-family: 'Space Mono';
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 100%;
+				color: var(--color-light);
+			}
+
+			&__change {
+				color: #00ac4f;
+			}
+		}
+	}
+}
+
+@media (max-width: 834px) {
+	.rankings {
+		&__title {
+			font-size: 38px;
+			padding-top: 60px;
+		}
+
+		&__description {
+			font-size: 16px;
+			line-height: 140%;
+		}
+
+		.tableHeader.tableItem {
+			display: none;
+		}
+
+		.tableItem {
+			&__artist {
+				&__number {
+					width: 24px;
+					height: 24px;
+				}
+				&__avatar {
+					width: 24px;
+					height: 24px;
+				}
+
+				&__name {
+					font-size: 20px;
+				}
+			}
+			&__statistic {
+				&__NFTsSold {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 560px) {
+	.rankings {
+		&__title {
+			font-size: 28px;
+			padding-top: 40px;
+		}
+
+		.tableItem {
+			&__artist {
+				gap: 10px;
+				width: 80%;
+				&__name {
+					font-size: 16px;
+					font-weight: 400;
+				}
+			}
+			&__statistic {
+				width: 20%;
+				&__change {
+					display: none;
+				}
+				&__volume {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
