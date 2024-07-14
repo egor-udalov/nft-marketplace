@@ -1,4 +1,5 @@
 import Style from './NftPage.module.scss';
+import { Link, useNavigate } from 'react-router-dom';
 import Author from '../../shared/Author/Author';
 import InteractiveButton from '../../shared/InteractiveButton/InteractiveButton';
 import NftCard from '../../entities/NftCard/NftCard';
@@ -6,6 +7,12 @@ import { ReactComponent as ArrowRightIcon } from '../../assets/svg-icons/arrow_r
 import { ReactComponent as GlobeIcon } from '../../assets/svg-icons/globe_icon.svg';
 
 function NftPage() {
+	const navigate = useNavigate();
+
+	const navigateHandleClick = () => {
+		navigate('/');
+		window.scrollTo(0, 0);
+	};
 	const nftCard = [
 		{
 			imgSrc: 'images/nft_card_distant_galaxy.png',
@@ -200,16 +207,18 @@ function NftPage() {
 				<section className={Style.nftMore}>
 					<div className={Style.nftMore__titleFlexWrapper}>
 						<h3 className={Style.nftMore__title}>More from this artist</h3>
-						<InteractiveButton
-							className={Style.nftMore__button}
-							color={'dark'}
-							svg={<ArrowRightIcon />}
-							text={'Go To Artist Page'}
-						/>
+						<Link to='/artist' onClick={navigateHandleClick}>
+							<InteractiveButton
+								className={Style.nftMore__button}
+								color={'dark'}
+								svg={<ArrowRightIcon />}
+								text={'Go To Artist Page'}
+							/>
+						</Link>
 					</div>
 					<div className={Style.nftMore__nftCards}>
 						{nftCard.map(nftCard => (
-							<a href='#'>
+							<a href='/nft'>
 								<NftCard
 									imgSrc={nftCard.imgSrc}
 									imgSrcDesktopAvif={nftCard.imgSrcDesktopAvif}

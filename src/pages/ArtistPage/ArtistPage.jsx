@@ -224,7 +224,7 @@ function ArtistPage() {
 				</div>
 				<div className={Style.artistPage__nftCards}>
 					{nftCard.map(nftCard => (
-						<a href='#'>
+						<a href='/nft'>
 							<NftCard
 								imgSrc={nftCard.imgSrc}
 								imgSrcDesktopAvif={nftCard.imgSrcDesktopAvif}

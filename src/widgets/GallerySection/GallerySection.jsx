@@ -1,13 +1,20 @@
 import Style from './GallerySection.module.scss';
-
+import { Link, useNavigate } from 'react-router-dom';
 import DescriptionSection from '../../shared/DescriptionSection/DescriptionSection';
 import TitleSection from '../../shared/TitleSection/TitleSection';
 import Author from '../../shared/Author/Author';
 
 function GallerySection() {
+	const navigate = useNavigate();
+
+	const navigateHandleClick = () => {
+		navigate('/');
+		window.scrollTo(0, 0);
+	};
+
 	const collection = [
 		{
-			link: '#',
+			link: '/artist',
 			image_main: 'images/DSGN_Animals_main.png',
 			image_small_1: 'images/DSGN_Animals_small_1.png',
 			image_small_2: 'images/DSGN_Animals_small_2.png',
@@ -18,7 +25,7 @@ function GallerySection() {
 		},
 
 		{
-			link: '#',
+			link: '/artist',
 			image_main: 'images/Magic_Mushrooms_main.png',
 			image_small_1: 'images/Magic_Mushrooms_small_1.png',
 			image_small_2: 'images/Magic_Mushrooms_small_2.png',
@@ -29,7 +36,7 @@ function GallerySection() {
 		},
 
 		{
-			link: '#',
+			link: '/artist',
 			image_main: 'images/Disco_Machines_main.png',
 			image_small_1: 'images/Disco_Machines_small_1.png',
 			image_small_2: 'images/Disco_Machines_small_2.png',
@@ -49,7 +56,11 @@ function GallerySection() {
 				/>
 				<div className={Style.gallery__collections_container}>
 					{collection.map(collection => (
-						<a href={collection.link} className={Style.gallery__collection}>
+						<Link
+							to={collection.link}
+							onClick={navigateHandleClick}
+							className={Style.gallery__collection}
+						>
 							<img
 								className={Style.gallery__image_main}
 								src={collection.image_main}
@@ -75,7 +86,7 @@ function GallerySection() {
 									name={collection.author_name}
 								/>
 							</div>
-						</a>
+						</Link>
 					))}
 				</div>
 			</section>

@@ -155,7 +155,7 @@ function MarketplacePage() {
 				<div className='content-container'>
 					<div className={Style.nftCards__flexWrapper}>
 						{nftCard.map(nftCard => (
-							<a href='#'>
+							<a href='/nft'>
 								<NftCard
 									imgSrc={nftCard.imgSrc}
 									imgSrcDesktopAvif={nftCard.imgSrcDesktopAvif}
