@@ -2,23 +2,23 @@
 	padding-bottom: 40px;
 
 	&__title {
+		padding-top: 80px;
+
 		font-family: 'Work Sans';
-		font-weight: 600;
 		font-size: 51px;
+		font-weight: 600;
 		line-height: 110%;
 		color: var(--color-light);
-
-		padding-top: 80px;
 	}
 
 	&__description {
+		margin-top: 20px;
+
 		font-family: 'Work Sans';
-		font-weight: 400;
 		font-size: 22px;
+		font-weight: 400;
 		line-height: 160%;
 		color: var(--color-light);
-
-		margin-top: 20px;
 	}
 
 	.tableHeader.tableItem {
@@ -27,44 +27,50 @@
 		border: 1px solid var(--color-neutral);
 
 		div {
+			padding: 0 5px;
+
 			font-family: 'Space Mono';
-			font-weight: 400;
 			font-size: 16px;
+			font-weight: 400;
 			line-height: 140%;
 			color: var(--color-neutral-light);
-			padding: 0 5px;
 		}
 	}
 
 	.tableItem {
-		margin-top: 20px;
 		display: flex;
 		align-items: center;
+
+		margin-top: 20px;
 		padding: 12px 20px;
-		border-radius: 20px;
+
 		background-color: var(--color-neutral);
+		border-radius: 20px;
 
 		&__artist {
 			display: flex;
+			gap: 20px;
 			align-items: center;
 			justify-content: start;
+
 			width: 50%;
-			gap: 20px;
 
 			&__number {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
 				width: 30px;
 				height: 30px;
-				border-radius: 100%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				background-color: var(--color-dark);
 
 				font-family: 'Space Mono';
-				font-weight: 400;
 				font-size: 16px;
+				font-weight: 400;
 				line-height: 140%;
 				color: var(--color-neutral-light);
+
+				background-color: var(--color-dark);
+				border-radius: 100%;
 			}
 
 			&__avatar {
@@ -75,8 +81,8 @@
 
 			&__name {
 				font-family: 'Work Sans';
-				font-weight: 600;
 				font-size: 22px;
+				font-weight: 600;
 				line-height: 140%;
 				color: var(--color-light);
 			}
@@ -92,8 +98,8 @@
 			&__NFTsSold,
 			&__volume {
 				font-family: 'Space Mono';
-				font-weight: 400;
 				font-size: 16px;
+				font-weight: 400;
 				line-height: 100%;
 				color: var(--color-light);
 			}
@@ -108,8 +114,8 @@
 @media (max-width: 834px) {
 	.rankings {
 		&__title {
-			font-size: 38px;
 			padding-top: 60px;
+			font-size: 38px;
 		}
 
 		&__description {
@@ -127,6 +133,7 @@
 					width: 24px;
 					height: 24px;
 				}
+
 				&__avatar {
 					width: 24px;
 					height: 24px;
@@ -136,6 +143,7 @@
 					font-size: 20px;
 				}
 			}
+
 			&__statistic {
 				&__NFTsSold {
 					display: none;
@@ -148,24 +156,28 @@
 @media (max-width: 560px) {
 	.rankings {
 		&__title {
-			font-size: 28px;
 			padding-top: 40px;
+			font-size: 28px;
 		}
 
 		.tableItem {
 			&__artist {
 				gap: 10px;
 				width: 80%;
+
 				&__name {
 					font-size: 16px;
 					font-weight: 400;
 				}
 			}
+
 			&__statistic {
 				width: 20%;
+
 				&__change {
 					display: none;
 				}
+
 				&__volume {
 					font-size: 12px;
 				}

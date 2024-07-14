@@ -1,22 +1,22 @@
 .marketplace {
 	&__title {
+		padding-top: 80px;
+
 		font-family: 'Work Sans';
-		font-weight: 600;
 		font-size: 51px;
+		font-weight: 600;
 		line-height: 110%;
 		color: var(--color-light);
-
-		padding-top: 80px;
 	}
 
 	&__description {
+		margin-top: 10px;
+
 		font-family: 'Work Sans';
-		font-weight: 400;
 		font-size: 22px;
+		font-weight: 400;
 		line-height: 160%;
 		color: var(--color-light);
-
-		margin-top: 10px;
 	}
 
 	.nftCards {
@@ -34,8 +34,8 @@
 @media (max-width: 834px) {
 	.marketplace {
 		&__title {
-			font-size: 38px;
 			padding-top: 60px;
+			font-size: 38px;
 		}
 
 		&__description {
@@ -52,8 +52,8 @@
 @media (max-width: 375px) {
 	.marketplace {
 		&__title {
-			font-size: 28px;
 			padding-top: 40px;
+			font-size: 28px;
 		}
 
 		.nftCards {

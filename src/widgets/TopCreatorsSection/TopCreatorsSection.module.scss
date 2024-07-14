@@ -21,8 +21,7 @@
 
     &__btn {
         grid-area: topCreators__btn;
-        align-self: end;
-        justify-self: end;
+        place-self: end end;
 
         padding: 0 50px;
 
@@ -71,8 +70,7 @@
 
 
         &__btn {
-            align-self: center;
-            justify-self: center;
+            place-self: center center;
             width: 330px;
             margin-top: 40px;
         }

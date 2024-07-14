@@ -14,14 +14,14 @@
 
 		&__nameWrapper {
 			display: flex;
-			justify-content: space-between;
 			gap: 30px;
+			justify-content: space-between;
 		}
 
 		&__name {
 			font-family: 'Work Sans';
-			font-weight: 600;
 			font-size: 51px;
+			font-weight: 600;
 			line-height: 110%;
 			color: var(--color-light);
 		}
@@ -31,18 +31,22 @@
 			gap: 20px;
 
 			button {
-				padding: 0;
 				cursor: pointer;
-				height: 60px;
-				border-radius: 20px;
+
 				display: flex;
 				gap: 12px;
 				align-items: center;
+
+				height: 60px;
+				padding: 0;
 				padding: 0 20px;
+
 				font-family: 'Work Sans';
-				font-weight: 600;
 				font-size: 16px;
+				font-weight: 600;
 				line-height: 140%;
+
+				border-radius: 20px;
 
 				img {
 					width: 20px;
@@ -52,15 +56,15 @@
 		}
 
 		&__buttonCopy {
-			border: none;
-			background-color: var(--color-primary);
 			color: var(--color-light);
+			background-color: var(--color-primary);
+			border: none;
 		}
 
 		&__buttonFollow {
 			color: var(--color-light);
-			border: 2px solid var(--color-primary);
 			background-color: transparent;
+			border: 2px solid var(--color-primary);
 		}
 
 		&__statisticsWrapper {
@@ -73,16 +77,16 @@
 
 				&__number {
 					font-family: 'Space Mono';
-					font-weight: 700;
 					font-size: 28px;
+					font-weight: 700;
 					line-height: 140%;
 					color: var(--color-light);
 				}
 
 				&__description {
 					font-family: 'Work Sans';
-					font-weight: 400;
 					font-size: 22px;
+					font-weight: 400;
 					line-height: 160%;
 					color: var(--color-light);
 				}
@@ -90,21 +94,23 @@
 		}
 
 		&__descriptionTitle {
-			font-family: 'Space Mono';
-			font-weight: 700;
-			font-size: 22px;
-			line-height: 160%;
 			margin-top: 30px;
+
+			font-family: 'Space Mono';
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 160%;
 			color: var(--color-neutral-light);
 		}
 
 		&__description {
+			margin-top: 10px;
+
 			font-family: 'Work Sans';
-			font-weight: 400;
 			font-size: 22px;
+			font-weight: 400;
 			line-height: 160%;
 			color: var(--color-light);
-			margin-top: 10px;
 		}
 
 		&__wrapperLinks {
@@ -139,51 +145,56 @@
 	}
 
 	&__nftCategories {
-		width: 100%;
-		height: 70px;
-		border-top: 0.5px solid #3b3b3b;
-		margin-top: 40px;
 		display: flex;
 		align-items: end;
 		justify-content: stretch;
+
+		width: 100%;
+		height: 70px;
+		margin-top: 40px;
+
+		border-top: 0.5px solid #3b3b3b;
 	}
 
 	&__category {
+		cursor: pointer;
+
+		display: flex;
 		flex-grow: 1;
+		gap: 15px;
+		align-items: center;
+		justify-content: center;
+
 		height: 60px;
 		padding: 0 30px;
-		border: none;
-		font: inherit;
-		background-color: transparent;
 
+		font: inherit;
 		font-family: 'Work Sans';
-		font-weight: 600;
 		font-size: 22px;
+		font-weight: 600;
 		line-height: 140%;
 		color: var(--color-neutral-light);
 
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 15px;
+		background-color: transparent;
+		border: none;
 		border-bottom: 2px solid transparent;
-		cursor: pointer;
 
 		&:active {
-			border-bottom: 2px solid var(--color-neutral-light);
 			color: var(--color-light);
+			border-bottom: 2px solid var(--color-neutral-light);
 		}
 
 		&__number {
+			padding: 5px 10px;
+
 			font-family: 'Space Mono';
-			font-weight: 400;
 			font-size: 16px;
+			font-weight: 400;
 			line-height: 140%;
 			color: var(--color-light);
 
-			padding: 5px 10px;
-			border-radius: 20px;
 			background-color: var(--color-neutral);
+			border-radius: 20px;
 		}
 
 		&:active &__number {
@@ -193,9 +204,10 @@
 
 	&__nftCards {
 		display: flex;
-		gap: 30px;
 		flex-wrap: wrap;
+		gap: 30px;
 		justify-content: center;
+
 		margin: 80px 0;
 	}
 }
@@ -232,9 +244,9 @@
 		}
 
 		&__category {
-			font-size: 16px;
-			padding: 0 10px;
 			gap: 5px;
+			padding: 0 10px;
+			font-size: 16px;
 
 			&__number {
 				font-size: 12px;
@@ -248,8 +260,8 @@
 		.artistInfo {
 			&__buttonsWrapper {
 				flex-direction: column;
-				width: 100%;
 				justify-content: stretch;
+				width: 100%;
 
 				button {
 					flex-grow: 1;

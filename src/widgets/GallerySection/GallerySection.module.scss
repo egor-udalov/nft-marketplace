@@ -2,26 +2,27 @@
 	padding: 80px 0;
 
 	&__collections_container {
-		margin-top: 60px;
 		display: flex;
 		flex-wrap: wrap;
+		gap: 40px 30px;
 		justify-content: center;
-		column-gap: 30px;
-		row-gap: 40px;
+
+		margin-top: 60px;
 	}
 
 	&__collection {
-		width: 330px;
 		display: grid;
-		grid-template-columns: repeat(3, 100px);
 		grid-auto-rows: auto;
+		grid-template-columns: repeat(3, 100px);
 		gap: 15px;
+
+		width: 330px;
 	}
 
 	&__image_main {
-		width: 100%;
 		grid-column: span 3;
 		grid-row: 1;
+		width: 100%;
 		border-radius: 20px;
 	}
 
@@ -78,8 +79,8 @@
 @media (max-width: 375px) {
 	.gallery {
 		&__collection {
-			width: 315px;
 			grid-template-columns: repeat(3, 95px);
+			width: 315px;
 		}
 
 		&__collection:nth-last-child(-n + 2) {

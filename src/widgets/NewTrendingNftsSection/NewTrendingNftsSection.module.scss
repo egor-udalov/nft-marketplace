@@ -22,9 +22,7 @@
 
     &__btn {
         grid-area: newTrendingNfts__btn;
-        align-self: end;
-        justify-self: end;
-
+        place-self: end end;
         padding: 0 50px;
     }
 
@@ -39,7 +37,7 @@
     }
 }
 
-@media (width <=1089px) {
+@media (max-width:1089px) {
     .newTrendingNfts__nft-cards>*:nth-child(n+3) {
         display: none;
     }
@@ -58,17 +56,16 @@
 
 @media (max-width: 520px) {
     .newTrendingNfts {
-        padding-bottom: 60px;
         grid-template-areas:
             "newTrendingNfts__title newTrendingNfts__title"
             "newTrendingNfts__descr newTrendingNfts__descr"
             "newTrendingNfts__nft-cards newTrendingNfts__nft-cards"
             "newTrendingNfts__btn newTrendingNfts__btn";
+        padding-bottom: 60px;
 
 
         &__btn {
-            align-self: center;
-            justify-self: center;
+            place-self: center center;
             width: 330px;
             margin-top: 40px;
         }
